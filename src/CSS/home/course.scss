@@ -1,0 +1,118 @@
+.course {
+  .course__offline {
+    background: #f4f7f6;
+    .course__items {
+      background-color: #fff;
+    }
+  }
+  .course__online {
+    padding: 50px 0;
+    border-top: 1px solid #000;
+    .course__items {
+      background-color: #ececec;
+    }
+  }
+
+  .course__list {
+    padding: 50px 0;
+    .course__items {
+      margin-bottom: 22px;
+      .course__items-image {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          transition: 0.4s;
+          transform: scale(1);
+        }
+        &:hover img {
+          transform: scale(1.3);
+        }
+        &:hover .overlay {
+          opacity: 0.3;
+          visibility: visible;
+        }
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #000000;
+          transition: 0.4s;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      .course__items-decs {
+        padding: 16px;
+        margin-bottom: 50px;
+        a {
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 168.09%;
+          transition: 0.4s;
+          color: #000;
+          &:hover {
+            color: #49c5b6;
+          }
+        }
+        p {
+          font-size: 16px;
+          line-height: 22px;
+          color: #838383;
+        }
+      }
+      .course__items-author {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #e7e7e7;
+        .avatar {
+          display: flex;
+          align-items: center;
+          padding-left: 16px;
+
+          img {
+            width: 47px;
+          }
+          span {
+            color: #000;
+            font-weight: 700;
+            margin-left: 12px;
+          }
+        }
+        .registration {
+          border-left: 1px solid #e7e7e7;
+          padding: 20px;
+          transition: 0.4s;
+          &:hover {
+            background: #e0e0e0;
+          }
+          a {
+            color: #49c5b6;
+            font-weight: 600;
+            line-height: 40px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.title {
+  text-align: center;
+  p {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}

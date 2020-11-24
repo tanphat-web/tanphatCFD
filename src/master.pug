@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./CSS/_grid.css")
+        link(rel="stylesheet", href="./CSS/main.css")
+    body
+        .wrapper
+            include ./mixin/mixin.pug
+            include ./layouts/LoadingPages.pug
+            include ./layouts/header.pug
+            include ./layouts/navbar.pug
+            block content
+            include ./layouts/footer.pug
+        script(src="js/main.js")

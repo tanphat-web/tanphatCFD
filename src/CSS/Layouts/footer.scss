@@ -1,0 +1,122 @@
+.footer {
+  .footer__top {
+    padding: 57px 0;
+    position: relative;
+    .footer__left {
+      .footer__decs {
+        display: block;
+        margin-bottom: 45px;
+        p {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 31px;
+        }
+      }
+      .footer__contact {
+        margin-bottom: 20px;
+        ul {
+          li {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 168.09%;
+          }
+        }
+      }
+      .footer__social {
+        display: flex;
+        align-items: center;
+        @include breakpoint(991) {
+          margin-bottom: 20px;
+        }
+        a {
+          margin-right: 25px;
+          img {
+            transition: 0.4s;
+            // cai nao kho qua di thi bo qua mai lam tiep ahihi
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+    .footer__right {
+      display: flex;
+      justify-content: flex-end;
+      @include breakpoint(991) {
+        justify-content: flex-start;
+        width: 100%;
+      }
+      ul.footer__right-list {
+        display: flex;
+        align-items: top;
+        margin-right: 15px;
+        @include breakpoint(574) {
+          flex-wrap: wrap;
+        }
+        li {
+          @include breakpoint(574) {
+            flex-basis: 50%;
+            width: 50%;
+          }
+          a {
+            margin-right: 20px;
+            font-size: 16px;
+            color: #000;
+            transition: 0.4s;
+            @include breakpoint(574) {
+              line-height: 27px;
+            }
+            &:hover {
+              color: #49c5b6;
+            }
+          }
+        }
+      }
+      .backtotop {
+        position: absolute;
+        right: -100px;
+        display: flex;
+        align-items: center;
+        transform: rotateZ(90deg);
+        cursor: pointer;
+        top: 85px;
+        letter-spacing: 3px;
+        font-size: 10px;
+        .line {
+          width: 150px;
+          height: 1px;
+          background: black;
+          margin-right: 10px;
+          display: block;
+          position: relative;
+          span {
+            top: -8px;
+            left: 0;
+            position: absolute;
+            transform: translateX(155px);
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    border-top: 1px solid #e6eaea;
+    padding: 10px 0;
+    .decs {
+      display: flex;
+      justify-content: space-between;
+      color: #7e7e7e;
+      @include breakpoint(767) {
+        flex-direction: column;
+        align-items: center;
+      }
+      p {
+        display: inline-block;
+        @include breakpoint(767) {
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

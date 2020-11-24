@@ -1,0 +1,33 @@
+.action {
+  background: #49c5b6;
+  padding: 79px 0;
+  h3 {
+    color: #fff;
+    font-size: 38px;
+    line-height: 53px;
+    text-align: center;
+    font-weight: 700;
+    @include breakpoint(767) {
+      font-size: 34px;
+      line-height: 47px;
+    }
+    @include breakpoint(575) {
+      font-size: 30px;
+    }
+  }
+  .btn-main {
+    text-align: center;
+    a {
+      text-align: center;
+      transition: 0.4s;
+      border: 1px solid #fff;
+      background-color: #fff;
+      color: #49c5b6;
+
+      &:hover {
+        background: transparent !important;
+        color: #fff;
+      }
+    }
+  }
+}
